@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xena Events</title>
+    <style>
+        h1{background-color:lightblue;text-align: center}
+        h3{background-color: lightgreen;text-align: center}
+        table{width: 50%}
+    </style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/BD01E92F-99B2-E540-B475-A3EDD88DABDF/main.js" charset="UTF-8"></script><script>
+        function call() {
+            var age = document.getElementById("ag1").value;
+            if (age.length>0) {
+
+
+                if (age==="0"||age==="1"||age==="2"||age==="3"||age==="4"||age==="5"||age==="6"||age==="7"||age==="8"||age==="9"||age==="10"||age==="11"||age==="12"||age==="13"||age==="14"||age==="15"||age==="16"||age==="17"||age==="18") {
+                    alert("Must be above 18yr Old")
+                }
+                else
+                {
+
+                }
+
+            }
+            else
+            {
+                alert("please enter age")
+            }
+
+        if(true)
+        {
+            var arr1=document.getElementById("us1");
+         var name=/^[A-Za-z]/;
+
+         if(name.test(arr1.value))
+         {
+             return true;
+         }
+         else
+         {
+             alert("please enter proper name");
+             return false;
+         }
+        }
+
+        }
+
+    </script>
+</head>
+
+<body>
+<h1>Xena Events</h1>
+<h3>hot balloon riding event from Feb 28th 2017 onwards for 5 days</h3>
+<form>
+    <fieldset>
+        <legend>Personal Info</legend>
+    <table>
+   <tr>
+      <td> <label>Name:</label></td>
+       <td> <input type="text" id="us1"></td>
+        </tr>
+        <tr>
+            <td><label>Age:</label></td>
+            <td> <input type="number" id="ag1"> </td>
+        </tr>
+        <tr>
+            <td> <label>Email Id:</label></td>
+            <td> <input type="email"></td>
+        </tr>
+        <tr>
+            <td> <label>City:</label></td>
+            <td>  <select name="city">
+            <option>City</option>
+            <option value="1">Rajkot</option>
+            <option value="2">Vizag</option>
+            <option value="3">Bangalore</option>
+            </option>
+        </select></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Register" onclick="call()"></td>
+        </tr>
+    </table>
+    </fieldset>
+</form>
+</body>
+</html>
